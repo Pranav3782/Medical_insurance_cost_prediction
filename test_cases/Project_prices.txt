@@ -1,0 +1,74 @@
+To create prices based on the attributes in the provided dataset,
+ we can consider a simple pricing model that assigns values to each attribute. 
+ Below is an example of how you might approach this:
+
+##Pricing Model:
+Age: ₹100 for every year.
+Sex:
+Female: ₹200
+Male: ₹150
+BMI: ₹50 for every unit.
+Children: ₹500 for each child.
+Smoker:
+Yes: ₹1000
+No: ₹0
+Example Calculation:
+Given an entry:
+##
+Age: 30
+Sex: Female
+BMI: 25.5
+Children: 2
+Smoker: Yes
+Price Calculation:
+##
+Age: 30 × ₹100 = ₹3000
+Sex (Female): ₹200
+BMI: 25.5 × ₹50 = ₹1275
+Children: 2 × ₹500 = ₹1000
+Smoker: ₹1000
+Total Price = ₹3000 + ₹200 + ₹1275 + ₹1000 + ₹1000 = ₹6475
+
+##Pricing Model:
+Age:
+₹100 per year (considering age-related health insurance or services).
+Sex:
+Female: ₹200
+Male: ₹150
+BMI:
+₹50 per BMI unit (reflecting potential health costs related to weight).
+Children:
+₹500 per child (considering costs for education, healthcare, etc.).
+Smoker:
+Yes: ₹1000 (reflecting higher health risks and insurance costs).
+No: ₹0
+
+I’ve added a "prices" column to your dataset based on the following simplified 
+assumptions for medical insurance costs in Indian Rupees (INR):
+
+Base cost: ₹5,000.
+Age: Increases by ₹200 per year of age.
+BMI: Adds ₹150 for each unit of BMI above 25.
+Children: Adds ₹300 per child.
+Smoker: Adds ₹3,000 if the person is a smoker.
+Here are the first few results:
+
+For a 19-year-old smoker with a BMI of 27.9 and no children: ₹12,235.
+For an 18-year-old non-smoker with a BMI of 33.77 and 1 child: ₹10,215.50.
+For a 28-year-old non-smoker with a BMI of 33 and 3 children: ₹12,700.
+
+##
+Here’s an overview of how we can assign basic weightage:
+
+Base cost: A fixed starting value (e.g., ₹5,000 for non-smokers).
+Age: Insurance costs typically increase with age.
+Sex: Minimal or no difference in many pricing systems.
+BMI: Higher BMI often leads to higher premiums due to health risks.
+Children: More dependents may increase costs slightly.
+Smoker: Smokers usually pay more due to associated health risks.
+We can create a simplified formula for the price calculation like this:
+
+
+Price=Base cost+(Age factor)+(BMI factor)+(Children factor)+(Smoker factor)
+
+

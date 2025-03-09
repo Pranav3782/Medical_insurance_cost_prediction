@@ -1,0 +1,16 @@
+Pricing Model:
+
+Age:
+₹100 per year (considering age-related health insurance or services).
+
+Sex:
+Female: ₹200
+Male: ₹150
+
+BMI:
+₹50 per BMI unit (reflecting potential health costs related to weight).
+Children:
+₹500 per child (considering costs for education, healthcare, etc.).
+Smoker:
+Yes: ₹1000 (reflecting higher health risks and insurance costs).
+No: ₹0
